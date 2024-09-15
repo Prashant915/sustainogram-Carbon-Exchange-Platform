@@ -1,0 +1,260 @@
+{% extends 'website/header.html' %}
+{% load static %}
+
+{% block head %}
+<section class="single-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Calculator</h2>
+                <ol class="breadcrumb header-bradcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Calculator</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about-shot-info section-sm bg-white">
+	<div class="container">
+		<div class="row">
+      <div class="col-lg-5 mt-lg-0">
+				<img loading="lazy" class="img-fluid" src="{% static 'website/images/new/16.jpg' %}" alt="">
+			</div>
+			<div class="col-lg-7 mt-2">
+        <h4 class="mb-3">Track Your Carbon Footprint and Drive Sustainability with Sustainogram's Free Carbon Calculator</h4>
+        <p>Take control of your environmental impact with Sustainogram's user-friendly carbon footprint calculator. This free-to-use Beta version empowers both individuals and businesses to measure, monitor, and reduce their carbon emissions.</p>
+				<p>
+          <h5>Why Choose Sustainogram's Carbon Calculator?</h5>
+          <strong>Effortless Tracking:</strong> Our intuitive tool simplifies the process of calculating your carbon footprint. Simply enter relevant data about your activities, and we'll provide a clear and concise report. <br>
+          <strong>Actionable Insights:</strong> Gain valuable insights into your carbon footprint across various categories. Identify areas for improvement and make informed decisions to minimize your environmental impact. <br>
+          <strong>Free and Accessible:</strong> Our Beta version is completely free to use, allowing everyone to participate in building a greener future. <br>
+          <strong>Designed for Individuals and Businesses:</strong> Whether you're an individual looking to reduce your personal footprint or a business aiming for sustainability goals, our calculator caters to your needs. <br>
+          </p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="about-shot-info section-sm bg-white">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<h2 class="mb-3">Customized Carbon Management Solutions</h2>
+		
+				<p><b>Our expert team can help you develop a solution that includes features like:</b></p>
+                    <li><b>Advanced Emissions Tracking:</b> Detailed categorization and analysis of your carbon footprint across various activities.</li>
+                    <li><b>Offset Recommendation Engine:</b> Identify and recommend the most effective carbon offset projects to compensate for your emissions.</li>
+                    <li><b>Monetization Potential Assessment:</b> Explore the potential of converting your emission reduction efforts into carbon credits for financial gain.</li>
+                    <li><b>Real-time Monitoring and Reporting:</b>   Monitor your progress towards sustainability goals and generate comprehensive reports for stakeholders.</li>
+
+				
+			</div>
+			<div class="col-lg-6 mt-lg-0">
+				<img loading="lazy" class="img-fluid" src="{% static 'website/images/new/10.jpg' %}" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+<section class="bg-white">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-xl-6 col-lg-8">
+              <div class="title text-center">
+                  <h2>Sustainogram Calculator</h2>
+                  <p>Effortlessly calculate your carbon footprint with our Sustainogram Calculator.</p>
+                  <div class="border"></div>
+              </div>
+          </div>
+      </div>
+      <div class="row no-gutters">
+          <div class="contact-wrap col-12">
+              <h3 class="text-center"></h3>
+              <div id="form-message-warning" class=""></div>
+              <div id="form-message-success" class="">
+                  Your message was sent, thank you!
+              </div>
+              <div class="m-auto pb-5 col-6 px-5 form-group">
+                  <label class="label" for="subject">Projects</label>
+                  <select class="form-control" id="dropdown">
+                      <option class="dropdown-item" value="none">Select Project</option>
+                      <option class="dropdown-item" value="Afforestion">Afforestation</option>
+                      <option class="dropdown-item" value="Aviation">Aviation</option>
+                      <option class="dropdown-item" value="Bio">Biomethanization</option>
+                      <option class="dropdown-item" value="EVchar">EV Charging</option>
+                      <option class="dropdown-item" value="solar">Solar</option>
+                  </select>
+              </div>
+              <div class="text-justify px-5 form-group info-text">
+                  <p id="infoText">
+                   
+                  </p>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="contact-wrap w-100 p-md-5 p-4">
+                  <div id="contactForm" name="contactForm" class="contactForm">
+                      <div class="row">
+                          <div class="col-md-12 hidden form-section" id="Afforestion">
+                              <div class="form-group">
+                                  <label class="label" for="treesnumber">Number of Trees Planted</label>
+                                  <input type="text" class="form-control" name="" id="treesnumber" placeholder="No. of Trees">
+                                  <li>total number of trees that are planted</li>
+                              </div>
+                              <div class="form-group">
+                                  <label class="label" for="avglife">Average Life of Planted</label>
+                                  <input type="text" class="form-control" name="" id="avglife" placeholder="usually 5 - 50 years">
+                                  <li>The average lifespan of the trees planted</li>
+                              </div>
+                              <div class="form-group">
+                                  <label class="label" for="susrate">Sustaining Rate (% age)</label>
+                                  <input type="text" class="form-control" name="" id="susrate" placeholder="Eg: 90%">
+                                  <li>The survival rate of the planted trees over a specified period.</li>
+                              </div>
+                              <div class="form-group">
+                                  <label class="label" for="spetree">Species of Trees</label>
+                                  <input type="text" class="form-control" name="" id="spetree" placeholder="Text Input separated with comma">
+                                  <li>The specific types of trees planted in the project.</li>
+                              </div>
+                              <div class="form-group">
+                                  <label class="label" for="location">Location of Field/Forest</label>
+                                  <input type="text" class="form-control" name="" id="location" placeholder="Text Input separated with comma">
+                                  <li>The geographical location where the trees are planted.</li>
+                              </div>
+                          </div>
+                          <div class="col-md-12 hidden form-section py-5" id="Aviation">
+                              <div class="form-group">
+                                  <label class="label" for="avivol">Volume of SAF Used in Ltrs</label>
+                                  <input type="text" class="form-control" name="" id="avivol" placeholder="in Liters">
+                                  <li>The volume of SAF used in liters.</li>
+                              </div>
+                          </div>
+                          <div class="col-md-12 hidden form-section" id="Bio">
+                              <div class="form-group">
+                                  <label class="label" for="biocap">Capacity of Plants</label>
+                                  <input type="text" class="form-control" name="" id="biocap" placeholder="Eg: 1 million cubic meters (mcm) per year">
+                                  <li>The production capacity of the bio-methanization plant.</li>
+                              </div>
+                              <div class="form-group">
+                                  <label class="label" for="biolif">Life of Plants</label>
+                                  <input type="text" class="form-control" name="" id="biolif" placeholder="Eg: 20 years">
+                                  <li>The operational lifespan of the bio-methanization plant.</li>
+                              </div>
+                              <div class="form-group">
+                                  <label class="label" for="biometh">Methane Captured in Plant</label>
+                                  <input type="text" class="form-control" name="" id="biometh" placeholder="Eg: 90%">
+                                  <li>The efficiency of methane capture in the bio-methanization plant.</li>
+                              </div>
+                          </div>
+                          <div class="col-md-12 hidden form-section" id="EVchar">
+                              <div class="form-group">
+                                  <label class="label" for="elecon">Electricity Consumption Per Charging Session</label>
+                                  <input type="text" class="form-control" name="" id="elecon" placeholder="Eg: 100 kWh per session">
+                                  <li>The amount of electricity dispensed per charging session.</li>
+                              </div>
+                              <div class="form-group">
+                                  <label class="label" for="numchar">Number of Charging Session Per Year</label>
+                                  <input type="text" class="form-control" name="" id="numchar" placeholder="Eg: 10 sessions per day * 365 days = 3,650 sessions per year">
+                                  <li>The total number of charging sessions that occur in a year.</li>
+                              </div>
+                              <div class="form-group">
+                                  <label class="label" for="Emission">Emission Factor for Avoiding Grid Facility</label>
+                                  <input type="text" class="form-control" name="" id="Emission" placeholder="Eg: 1 kg CO2 per kWh">
+                                  <li>the emission factor of grid electricity avoided using renewable energy</li>
+                              </div>
+                          </div>
+                          <div class="col-md-12 hidden form-section" id="solar">
+                              <div class="form-group">
+                                  <label class="label" for="solcap">Capacity of Solar Power Plant</label>
+                                  <input type="text" class="form-control" name="" id="solcap" placeholder="In megawatt">
+                                  <li>The installed capacity of the solar power plant.</li>
+                              </div>
+                              <div class="form-group">
+                                  <label class="label" for="solloc">Local Electricity Grid Mix</label>
+                                  <input type="text" class="form-control" name="" id="solloc" placeholder="Example: 70% of electricity from fossil fuels">
+                                  <li>electricity generated from fossil fuels in the local grid mix.</li>
+                              </div>
+                              <div class="form-group">
+                                  <label class="label" for="sollif">Life of solar Panels remaining</label>
+                                  <input type="text" class="form-control" name="" id="sollif" placeholder="In years">
+                                  <li>The remaining operational lifespan of the solar panels.</li>
+                              </div>
+                          </div>
+                          <div class="form-group mt-1">
+                            <input value="Calculate" id="ans" class="btn btn-primary w-100" readonly style="display: none;">
+                        </div>
+                          <div class="form-group mt-1 hidden" id="calculateBtnWrapper">
+                              <button id="calculateBtn" class="btn btn-success w-100">Calculate</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-center bg-white">
+              <div class="info-wrap w-100 p-5 h-75 img" id="imageBox" style="background-image: url(../../static/website/images/calc.webp);background-size:cover">
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+	 <!--
+Start Call To Action
+==================================== -->
+<section class="call-to-action-2 section">
+	<div class="container ">
+		<div class="row ">
+			<div class="col-md-12 mb-5 text-center">
+				<h3 class="text-white">Meta Registry Benefits</h3>
+			</div>
+			<div class="col-md-12">
+				<h5>
+					<ul class="feature-list d-md-flex justify-content-around align-items-center">
+						<li class="mb-3 text-white"> <i class="tf-ion-android-checkmark-circle"></i> No Double Counting</li>
+						<li class="mb-3 text-white"> <i class="tf-ion-android-checkmark-circle"></i> Transparency & Integrity</li>
+						<li class="mb-3 text-white"> <i class="tf-ion-android-checkmark-circle"></i> Immutability</li>
+						<li class="mb-3 text-white"> <i class="tf-ion-android-checkmark-circle"></i> Efficiency</li>
+						<li class="mb-3 text-white"> <i class="tf-ion-android-checkmark-circle"></i> Decentralised Security Features</li>
+					</ul>
+				</h5>
+			</div>
+		</div> 		<!-- End row -->
+	</div>   	<!-- End container -->
+</section>   <!-- End section -->
+	<section class="about-shot-info section-sm mb-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<!-- section title -->
+				<div class="col-xl-6 col-lg-8">
+					<div class="title text-center">
+						<h2>Carbon Emission</h2>
+						<p>Measure your carbon footprint accurately with our Carbon Impact Gauge.</p>
+						<div class="border"></div>
+					</div>
+				</div>
+				<!-- /section title -->
+			</div>
+			<div class="row">
+        <div class="col-lg-7 h-auto">
+          <iframe class="w-100 h-100" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" src="https://calculator.carbonfootprint.com/calculator.aspx"></iframe>
+      </div>
+      
+      
+				<div class="col-lg-5 mt-lg-0 h-100">
+					<h2 class="mb-3">Carbon Footprint<br> Calculator</h2>
+					<p>Carbon Footprint software is an ideal tool to help raise awareness, measure emissions, reduce costs and engage staff in your carbon management programme.
+						</p>
+					<p>Our Carbon Footprint software is the leading & authoritative calculation package that is also one of easiest to use – so much so that it has well over 1,000,000 users worldwide. </p>
+					<p>Mandatory Greenhouse Gas (GHG) Reporting ready Assessments to track your organisation's carbon footprint. Over 40 countries across Europe, US/North America, Asia, South Pacific etc have GHG Reporting, now is the time for action. 
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+        const staticUrl = "{% static '' %}";
+    </script>
+  {% include 'website/footer.html' %}
+
+  {% endblock %}
+

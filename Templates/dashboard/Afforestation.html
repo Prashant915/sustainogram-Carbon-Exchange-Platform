@@ -1,0 +1,227 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sustainogram - Carbon Exchange </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'website/images/favicon.jpg' %}">
+    <link rel="stylesheet" href="{% static 'dashboard/vendor/owl-carousel/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'dashboard/vendor/owl-carousel/css/owl.theme.default.min.css' %}">
+    <link href="{% static 'dashboard/vendor/jqvmap/css/jqvmap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'dashboard/css/style.css' %}" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    {% include 'dashboard/Afforestationheader.html' %}
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="row page-titles mx-0">
+                    <div class="col-sm-6">
+                        <div class="welcome-text">
+                            <h4>Hi, welcome back!</h4>
+                            <span class="ml-1">Flot Chart</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Charts</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Flot</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- row -->
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Carbon Offset / month</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotBar1" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Carbon Offset / Year</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotBar2" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Tree Plantation Progress / Year</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotLine1" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Comparison with target</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotLine2" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Comparison with target</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotLine3" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Carbon Offset / Year</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotArea1" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Area Chart</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotArea2" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Realtime Chart</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotRealtime1" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Realtime Chart</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotRealtime2" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © Designed &amp; Developed by <a href="#" target="_blank">Sustainogram</a> 2024</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="{% static 'dashboard/vendor/global/global.min.js' %}"></script>
+    <script src="{% static 'dashboard/js/quixnav-init.js' %}"></script>
+    <script src="{% static 'dashboard/js/custom.min.js' %}"></script>
+
+
+    <!-- Vectormap -->
+    <script src="{% static 'dashboard/vendor/raphael/raphael.min.js' %}"></script>
+    <script src="{% static 'dashboard/vendor/morris/morris.min.js' %}"></script>
+
+
+    <script src="{% static 'dashboard/vendor/circle-progress/circle-progress.min.js' %}"></script>
+    <script src="{% static 'dashboard/vendor/chart.js/Chart.bundle.min.js' %}"></script>
+
+    <script src="{% static 'dashboard/vendor/gaugeJS/dist/gauge.min.js' %}"></script>
+
+    <!-- Owl Carousel -->
+    <script src="{% static 'dashboard/vendor/owl-carousel/js/owl.carousel.min.js' %}"></script>
+
+    <!-- Counter Up -->
+    <script src="{% static 'dashboard/vendor/jqvmap/js/jquery.vmap.min.js' %}"></script>
+    <script src="{% static 'dashboard/vendor/jqvmap/js/jquery.vmap.usa.js' %}"></script>
+    <script src="{% static 'dashboard/vendor/jquery.counterup/jquery.counterup.min.js' %}"></script>
+
+
+    <script src="{% static 'dashboard/js/dashboard/dashboard-1.js' %}"></script>
+
+
+    
+
+    <script src="{% static 'dashboard/vendor/flot/jquery.flot.js' %}"></script>
+    <script src="{% static 'dashboard/vendor/flot/jquery.flot.pie.js' %}"></script>
+    <script src="{% static 'dashboard/vendor/flot/jquery.flot.resize.js' %}"></script>
+    <script src="{% static 'dashboard/vendor/flot-spline/jquery.flot.spline.min.js' %}"></script>
+    <script src="{% static 'dashboard/js/plugins-init-aff/flot-init.js' %}"></script>
+
+
+</body>
+
+</html>

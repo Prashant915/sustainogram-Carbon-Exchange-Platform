@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Sustainogram - Carbon Exchange</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Sustainogram - Carbon Exchange Platform">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Sustainogram">
+  <meta name="generator" content="Sustainogram - Carbon Exchange Platform">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'website/images/favicon.jpg' %}" />
+  <!-- CSS
+  ================================================== -->
+  <!-- Themefisher Icon font -->
+  <link rel="stylesheet" href="{% static 'website/plugins/themefisher-font/style.css' %}">
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="{% static 'website/plugins/bootstrap/bootstrap.min.css' %}">
+  <!-- Lightbox.min css -->
+  <link rel="stylesheet" href="{% static 'website/plugins/lightbox2/css/lightbox.min.css' %}">
+  <!-- animation css -->
+  <link rel="stylesheet" href="{% static 'website/plugins/animate/animate.css' %}">
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="{% static 'website/plugins/slick/slick.css' %}">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+  <!-- <link rel="stylesheet" href="{% static 'website/css/style2.css' %}"> -->
+  <!-- fontawesome css -->
+  <link rel="stylesheet" href="{% static 'website/plugins/fontawesome/css/all.css' %}">
+  <!-- Icofont -->
+  <link rel="stylesheet" href="{% static 'website/plugins/icofont/icofont.css' %}">
+</head>
+<body id="body">
+
+  <!--
+  Start Preloader
+  ==================================== -->
+  <!-- <div id="preloader">
+    <div class='preloader'>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div> -->
+  <!--
+  End Preloader
+  ==================================== -->
+
+<!--
+Fixed Navigation
+==================================== -->
+<header class="navigation fixed-top">
+	<div class="container">
+	  <!-- main nav -->
+	  <nav class="navbar navbar-expand-lg navbar-light px-0">
+		<!-- logo -->
+		<a class="navbar-brand logo" href="{% url 'homepage' %}">
+		  <img loading="lazy" class="logo-default" src="{% static 'website/images/logoo.png' %}" alt="logo" />
+		  <img loading="lazy" class="logo-white" src="{% static 'website/images/Group-26.png' %}" alt="logo" />
+		</a>
+		<!-- /logo -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+		  aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+  
+		 <div class="collapse navbar-collapse" id="navigation">
+		  <ul class="navbar-nav ml-auto text-center">
+			<li class="nav-item ">
+			  <a class="nav-link" href="{% url 'about' %}">About Us</a>
+			</li>
+			<li class="nav-item ">
+			  <a class="nav-link" href="{% url 'service' %}">Solutions</a>
+			</li>
+			<!-- <li class="nav-item ">
+			  <a class="nav-link" href="portfolio.html">Portfolio</a>
+			</li> -->
+			<li class="nav-item ">
+			  <a class="nav-link" href="{% url 'resource' %}">Resources</a>
+			</li>
+			<li class="nav-item ">
+			  <a class="nav-link" href="{% url 'calculator' %}">calculator</a>
+			</li>
+			<li class="nav-item ">
+			  <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+			</li>
+			<li class="nav-item ">
+				<a class="nav-link" href="{% if request.user %} {% url 'homedashboard' %} {% else %} {% url 'register' %} {% endif %}">Register</a>
+			</li>
+			<!-- <li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown02" role="button" data-toggle="dropdown"
+				aria-haspopup="true" aria-expanded="false">
+				Pages <i class="tf-ion-chevron-down"></i>
+			  </a>
+			  <ul class="dropdown-menu" aria-labelledby="navbarDropdown02">
+				<li><a class="dropdown-item" href="404.html">404 Page</a></li>
+				<li><a class="dropdown-item" href="blog.html">Blog Page</a></li>
+				<li><a class="dropdown-item" href="single-post.html">Blog Single Page</a></li>
+									  
+				<li class="dropdown dropdown-submenu dropleft">
+				  <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0201" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu  <i class="tf-ion-chevron-down"></i></a>
+		 -->
+				  <ul class="dropdown-menu" aria-labelledby="dropdown0201">
+					<li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
+					<li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			</li>
+		  </ul>
+		</div>
+	  </nav>
+	  <!-- /main nav -->
+	</div>
+  </header>
+<!--
+End Fixed Navigation
+==================================== -->
+
+{% block head %}
+    
+{% endblock head %}

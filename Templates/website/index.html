@@ -1,0 +1,620 @@
+{% extends 'website/header.html' %}
+{% load static %}
+
+{% block head %}
+
+ <!--
+Welcome Slider
+==================================== -->
+ <!-- <section class="hero-area">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-md-12">
+ 				<div class="block mt-4">
+ 					<h1 class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s">We are smart <br> Creative Agency</h1>
+ 					<p class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">Lorem ipsum dolor sit amet, consectetur
+ 						adipisicing elit. Nulla, ad rerum repellat. Sequi, labore, illo. Ducimus voluptates quidem obcaecati, ad.
+ 					</p>
+ 					<ul class="list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
+ 						<li class="list-inline-item">
+ 							<a data-scroll href="#services" class="btn btn-main">Explore Us</a>
+ 						</li>
+ 						<li class="list-inline-item">
+ 							<a data-scroll href="#team" class="btn btn-transparent">Learn More</a>
+ 						</li>
+ 					</ul>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </section> -->
+ <div class="hero-slider">
+	<div class="slider-item th-fullpage hero-area" style="background-image: url(../../static/website/images/slider/4.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1">Sustainability Focused <br> Enthusiasts Reducing Carbon Emissions</h1>
+					<p data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".5">Empowering Businesses and Individuals on Their <br>Sustainability Journey</p>
+					<a data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".8" class="btn btn-main"
+						href="service.html">Explore Us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="slider-item th-fullpage hero-area" style="background-image: url(../../static/website/images/slider/1.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">Sustainability Enthusiasts <br> Reducing Carbon</h1>
+					<p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Sustainogram bridges the gap between the 
+						Conventional Voluntary Carbon <br>Market (VCM) and the world of OpenBlockchain Platforms.</p>
+					<a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main"
+						href="service.html">Explore Us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="slider-item th-fullpage hero-area" style="background-image: url(../../static/website/images/slider/2.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1">Carbon credits <br> that deliver real impact</h1>
+					<p data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".5">We help businesses understand and navigate the complex <br>world of voluntary carbon credits</p>
+					<a data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".8" class="btn btn-main"
+						href="service.html">Explore Us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--
+Start About Section
+==================================== -->
+<section class="about" id="about">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-xl-6 col-lg-8">
+				<!-- section title -->
+				<div class="title text-center">
+					<h2>Scaling Impact through Carbon Markets</h2>
+					<p>A global marketplace and exchange, At Sustainogram Marketplace, we enable you to take climate action with confidence</p>
+					<div class="border"></div>
+				</div>
+				<!-- /section title -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 mb-5 mb-lg-0">
+				<img loading="lazy" src="{% static 'website/images/new/15.jpg' %}" style="border-radius:10px;" class="img-fluid" alt="">
+			</div>
+			<div class="col-lg-6">
+				<p>Sustainogram is a leading Indian startup dedicated to tackling climate change through 
+					the power of the carbon credit market. Registered under DPIIT (Department for Promotion 
+					of Industry and Internal Trade) At present, we offer credits from nature-based projects
+					as they bring co-benefits to communities and biodiversity, in addition to providing
+					meaningful scale, as estimates suggest they can support up to 30% of required climate
+					change mitigation for a Below-2°C pathway by 2030 (Natural Climate Solutions Alliance).</p>
+					<p>All our credits are verified by global standards such as Verra and Gold Standard. We also 
+					conduct checks to ensure the credits listed have robust carbon sequestration performance, 
+					contribute meaningfully to biodiversity, and ensure social integrity, project governance & risk.</p>
+				<h4>Our featured offerings.</h4>
+				<ul class="feature-list">
+					<li> <i class="tf-ion-android-checkmark-circle"></i> Renewable Energy Certificates</li>
+					<li> <i class="tf-ion-android-checkmark-circle"></i> Afforestation Credits</li>
+					<li> <i class="tf-ion-android-checkmark-circle"></i> Concrete Mineralisation Credits</li>
+					<li> <i class="tf-ion-android-checkmark-circle"></i> Forest Protection and Enhancement</li>
+					<li> <i class="tf-ion-android-checkmark-circle"></i> Blue Carbon Credits</li>
+				</ul>
+				<a href="contact.html" class="btn btn-main mt-20">Learn More</a>
+			</div>
+		</div> <!-- End row -->
+	</div> <!-- End container -->
+</section> <!-- End section -->
+
+<!-- Start Blog Section
+=========================================== -->
+
+<section class="call-to-action section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-xl-6 col-lg-8 text-center">
+				<h2>Join the Movement</h2>
+				<p>Get started today with our Beta version of the Carbon Calculator. Together, let's make a measurable difference in the fight against climate change.</p>
+				<a href="contact.html" class="btn btn-main">Contact Us</a>
+			</div>
+		</div> <!-- End row -->
+	</div> <!-- End container -->
+</section> <!-- End section -->
+
+<!--
+Start About Section
+==================================== -->
+<section class="service-2 section">
+	<div class="container">
+	  <div class="row justify-content-center">
+  
+		<div class="col-lg-6">
+		  <!-- section title -->
+		  <div class="title text-center">
+			<h2>Our Services</h2>
+			<p>we are offering a clearing and settlement service. </p>
+			<div class="border"></div>
+		  </div>
+		  <!-- /section title -->
+		</div>
+	  </div>
+	  <div class="row">
+  
+		<div class="col-md-4 text-center d-none d-md-block">
+		  <img loading="lazy" src="{% static 'website/images/13.jpg' %}" class="img-fluid inline-block" alt="">
+		</div>
+		<div class="col-md-8">
+		  <div class="row text-center">
+			<div class="col-md-6 col-sm-6">
+			  <div class="service-item">
+				<i class="tf-ion-search"></i>
+				<h4>Carbon Calculator</h4>
+				<p>Our user-friendly dashboard helps both businesses and individuals track and monitor their carbon footprint across various sectors</p>
+			  </div>
+			</div><!-- END COL -->
+			<div class="col-md-6 col-sm-6">
+			  <div class="service-item">
+				<i class="tf-ion-ios-checkmark-outline"></i>
+				<h4>Carbon Compliance</h4>
+				<p>Our team of experts guides you through the intricacies of carbon compliance, ensuring you meet all regulatory requirements</p>
+			  </div>
+			</div><!-- END COL -->
+			<div class="col-md-6 col-sm-6">
+			  <div class="service-item">
+				<i class="tf-ion-stats-bars"></i>
+				<h4>The Future of Carbon Trading</h4>
+				<p> We are pioneering the development of a revolutionary blockchain-based carbon exchange.</p>
+			  </div>
+			</div><!-- END COL -->
+			<div class="col-md-6 col-sm-6">
+			  <div class="service-item">
+				<i class="tf-ion-compose"></i>
+				<h4>Enhanced Transparency</h4>
+				<p> Increased visibility throughout the validation, registry, certification, and transaction processes.</p>
+			  </div>
+			</div><!-- END COL -->
+		  </div>
+		</div>
+	  </div> <!-- End row -->
+	</div> <!-- End container -->
+  </section> <!-- End section -->
+
+<!--
+Start Call To Action
+==================================== -->
+
+<!-- Start Team Skills
+=========================================== -->
+<!-- <section class="team-skills section-sm" id="skills">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-xl-6 col-lg-8">
+				<div class="title text-center">
+					<h2>Trusted by leading companies</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus fugiat, vel veniam, eos et
+						delectus eveniet molestiae. Esse, voluptas ratione.</p> 
+					<div class="border"></div>
+				</div>
+			</div>
+				<div class="col-md-12">
+					<div id="clients-slider" class="clients-logo-slider">
+						<img loading="lazy" src="images/client-logo/logo1.png" alt="">
+						<img loading="lazy" src="images/client-logo/logo-2.png" alt="">
+						<img loading="lazy" src="images/client-logo/logo-3.png" alt="">
+						<img loading="lazy" src="images/client-logo/logo-4.png" alt="">
+						<img loading="lazy" src="images/client-logo/logo-5.png" alt="">
+						<img loading="lazy" src="images/client-logo/logo1.png" alt="">
+						<img loading="lazy" src="images/client-logo/logo-2.png" alt="">
+						<img loading="lazy" src="images/client-logo/logo-3.png" alt="">
+						<img loading="lazy" src="images/client-logo/logo-4.png" alt="">
+						<img loading="lazy" src="images/client-logo/logo-5.png" alt="">
+					</div>
+				</div>
+		</div> -->
+
+		<!-- <div class="row justify-content-between">
+			<div class="col-md-5">
+				<div class="team-skills-content">
+					<h2 class="mb-3">Simple To Start</h2>
+					<p>Vestibulum nisl tortor, consectetur quis imperdiet bium, letcu. Sedndime ntumiaculis ex, in
+						faucibus lorem accumsan non. Donec mattis tin unt metuorbi sed tort Igor aman luctus dignissim.
+						Vestibulum nisl tortor, consectetur quis imperdiet bium, letcu. Sedndime ntumiaculis ex, in
+						faucibus lorem accumsan non.</p>
+					<a href="contact.html" class="btn btn-main mt-20">Contact Us</a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="progress-block">
+					<ul>
+						<li class="mb-3">
+							<span>Photoshop</span>
+							<div class="progress">
+								<div class="progress-bar" style="width: 90%;">
+								</div>
+							</div>
+						</li>
+						<li class="mb-3">
+							<span>Web Application</span>
+							<div class="progress">
+								<div class="progress-bar" style="width: 85%;">
+								</div>
+							</div>
+						</li>
+						<li class="mb-3">
+							<span>Andriod Application</span>
+							<div class="progress">
+								<div class="progress-bar" style="width: 92%;">
+								</div>
+							</div>
+						</li>
+						<li>
+							<span>IOS Development</span>
+							<div class="progress">
+								<div class="progress-bar" style="width: 78%;">
+								</div>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div> End row 
+	</div> 
+</section>  -->
+<!--
+Start Counter Section
+==================================== -->
+<!-- <section class="counter-wrapper section-sm">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-xl-6 col-lg-8 text-center">
+				<div class="title">
+					<h2>Award-Winning Agency</h2>
+					<p>Vestibulum nisl tortor, consectetur quis imperdiet bibendum, laoreet sed arcu. Sed condimentum iaculis ex, in faucibus lorem accumsan non. Donec mattis tincidunt metus. Morbi sed tortor a risus luctus dignissim.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			
+			<div class="col-md-3 col-sm-6 col-xs-6 text-center ">
+				<div class="counters-item">
+					<i class="tf-ion-ios-alarm-outline"></i>
+					<div>
+						<span class="counter" data-count="150">0</span>
+					</div>
+					<h3>Happy Clients</h3>
+				</div>
+			</div>
+			
+			<div class="col-md-3 col-sm-6 col-xs-6 text-center ">
+				<div class="counters-item">
+					<i class="tf-ion-ios-analytics-outline"></i>
+					<div>
+						<span class="counter" data-count="130">0</span>
+					</div>
+					<h3>Projects completed</h3>
+				</div>
+			</div>
+			
+			<div class="col-md-3 col-sm-6 col-xs-6 text-center ">
+				<div class="counters-item">
+					<i class="tf-ion-ios-compose-outline"></i>
+					<div>
+						<span class="counter" data-count="99">0</span>
+					</div>
+					<h3>Positive feedback</h3>
+
+				</div>
+			</div>
+			
+			<div class="col-md-3 col-sm-6 col-xs-6 text-center ">
+				<div class="counters-item kill-border">
+					<i class="tf-ion-ios-bolt-outline"></i>
+					<div>
+						<span class="counter" data-count="250">0</span>
+					</div>
+					<h3>Cups of Coffee</h3>
+				</div>
+			</div>
+			
+		</div> 
+	</div> 
+</section> -->
+
+<!-- Start Portfolio Section
+		=========================================== -->
+<!-- 
+<section class="portfolio section-sm" id="portfolio">
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-xl-6 col-lg-8">
+				
+				<div class="title text-center">
+					<h2>Our Works</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, veritatis. Lorem ipsum dolor sit amet,
+						consectetur adipisicing elit. Minima, vitae? </p>
+					<div class="border"></div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+
+				<div class="portfolio-filter">
+					<button type="button" data-filter="all">All</button>
+					<button type="button" data-filter="photography">Photography</button>
+					<button type="button" data-filter="ios">IOS App</button>
+					<button type="button" data-filter="development">Development</button>
+					<button type="button" data-filter="design">Design</button>
+				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<div class="filtr-container">
+							<div class="col-md-3 col-sm-6 col-xs-6 filtr-item " data-category="mix, design">
+								<div class="portfolio-block">
+									<img class="img-fluid" src="images/portfolio/portfolio-1.jpg" alt="">
+									<div class="caption">
+										<a class="search-icon" href="images/portfolio/portfolio-1.jpg" data-lightbox="image-1">
+											<i class="tf-ion-ios-search-strong"></i>
+										</a>
+										<h4><a href="portfolio.html">AirBnB Postcard</a></h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 filtr-item " data-category="mix, design, ios">
+								<div class="portfolio-block">
+									<img class="img-fluid" src="images/portfolio/portfolio-2.jpg" alt="">
+									<div class="caption">
+										<a class="search-icon" href="images/portfolio/portfolio-2.jpg" data-lightbox="image-1">
+											<i class="tf-ion-ios-search-strong"></i>
+										</a>
+										<h4><a href="portfolio.html">AirBnB Postcard</a></h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 filtr-item " data-category="mix, photography, development">
+								<div class="portfolio-block">
+									<img class="img-fluid" src="images/portfolio/portfolio-3.jpg" alt="">
+									<div class="caption">
+										<a class="search-icon" href="images/portfolio/portfolio-3.jpg" data-lightbox="image-1">
+											<i class="tf-ion-ios-search-strong"></i>
+										</a>
+										<h4><a href="portfolio.html">AirBnB Postcard</a></h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 filtr-item " data-category="mix, photography, ios">
+								<div class="portfolio-block">
+									<img class="img-fluid" src="images/portfolio/portfolio-4.jpg" alt="">
+									<div class="caption">
+										<a class="search-icon" href="images/portfolio/portfolio-4.jpg" data-lightbox="image-1">
+											<i class="tf-ion-ios-search-strong"></i>
+										</a>
+										<h4><a href="portfolio.html">AirBnB Postcard</a></h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 filtr-item " data-category="mix, design">
+								<div class="portfolio-block">
+									<img class="img-fluid" src="images/portfolio/portfolio-5.jpg" alt="">
+									<div class="caption">
+										<a class="search-icon" href="images/portfolio/portfolio-5.jpg" data-lightbox="image-1">
+											<i class="tf-ion-ios-search-strong"></i>
+										</a>
+										<h4><a href="portfolio.html">AirBnB Postcard</a></h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 filtr-item " data-category="mix, design, development">
+								<div class="portfolio-block">
+									<img class="img-fluid" src="images/portfolio/portfolio-6.jpg" alt="">
+									<div class="caption">
+										<a class="search-icon" href="images/portfolio/portfolio-6.jpg" data-lightbox="image-1">
+											<i class="tf-ion-ios-search-strong"></i>
+										</a>
+										<h4><a href="portfolio.html">AirBnB Postcard</a></h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 filtr-item " data-category="mix, photography">
+								<div class="portfolio-block">
+									<img class="img-fluid" src="images/portfolio/portfolio-7.jpg" alt="">
+									<div class="caption">
+										<a class="search-icon" href="images/portfolio/portfolio-7.jpg" data-lightbox="image-1">
+											<i class="tf-ion-ios-search-strong"></i>
+										</a>
+										<h4><a href="portfolio.html">AirBnB Postcard</a></h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 filtr-item " data-category="mix, design, development">
+								<div class="portfolio-block">
+									<img class="img-fluid" src="images/portfolio/portfolio-1.jpg" alt="">
+									<div class="caption">
+										<a class="search-icon" href="images/portfolio/portfolio-1.jpg" data-lightbox="image-1">
+											<i class="tf-ion-ios-search-strong"></i>
+										</a>
+										<h4><a href="portfolio.html">AirBnB Postcard</a></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div> 
+</section> -->
+
+<!-- Start Pricing section
+		=========================================== -->
+
+<!--
+Start Blog Section
+=========================================== -->
+<!-- <section class="blog" id="blog">
+	<div class="container">
+		<div class="row justify-content-center">
+			
+			<div class="col-xl-6 col-lg-8">
+				<div class="title text-center ">
+					<h2> Latest <span class="color">Posts</span></h2>
+					<div class="border"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus facere accusamus, reprehenderit libero inventore nam.</p>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="row">
+			
+			<article class="col-lg-4 col-md-6">
+				<div class="post-item">
+					<div class="media-wrapper">
+						<img loading="lazy" src="images/blog/post-1.jpg" alt="amazing caves coverimage" class="img-fluid">
+					</div>
+
+					<div class="content">
+						<h3><a href="single-post.html">Reasons to Smile</a></h3>
+						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+							moon officia aute, non skateboard dolor brunch.</p>
+						<a class="btn btn-main" href="single-post.html">Read more</a>
+					</div>
+				</div>
+			</article>
+			
+			<article class="col-lg-4 col-md-6">
+				<div class="post-item">
+					<div class="media-wrapper">
+						<img loading="lazy" src="images/blog/post-2.jpg" alt="amazing caves coverimage" class="img-fluid">
+					</div>
+
+					<div class="content">
+						<h3><a href="single-post.html">A Few Moments</a></h3>
+						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+							moon officia aute, non skateboard dolor brunch.</p>
+						<a class="btn btn-main" href="single-post.html">Read more</a>
+					</div>
+				</div>
+			</article>
+			
+			<article class="col-lg-4 col-md-6">
+				<div class="post-item">
+					<div class="media-wrapper">
+						<img loading="lazy" src="images/blog/post-3.jpg" alt="amazing caves coverimage" class="img-fluid">
+					</div>
+
+					<div class="content">
+						<h3><a href="single-post.html">Hints for Life</a></h3>
+						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+							moon officia aute, non skateboard dolor brunch.</p>
+						<a class="btn btn-main" href="single-post.html">Read more</a>
+					</div>
+				</div>
+			</article>
+			
+		</div> 
+	</div> 
+</section> -->
+ <!--Start Contact Us
+	=========================================== -->
+ <!-- <section class="contact-us" id="contact">
+ 	<div class="container">
+ 		<div class="row justify-content-center">
+			 
+ 			<div class="col-xl-6 col-lg-8">
+				<div class="title text-center">
+					<h2>Become a member of Sustainogram Community today</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate facilis eveniet maiores ab maxime nam
+						ut numquam molestiae quaerat incidunt?</p>
+					<div class="border"></div>
+				</div>
+			</div>
+			
+		</div>
+ 		<div class="row">
+ 			
+ 			<div class="contact-details col-md-6 ">
+ 				<h3 class="mb-3">Contact Details</h3>
+ 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero, provident, eum eligendi blanditiis ex
+ 					explicabo vitae nostrum facilis asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore
+ 					adipisci.</p>
+ 				<ul class="contact-short-info mt-4">
+ 					<li class="mb-3">
+ 						<i class="tf-ion-ios-home"></i>
+ 						<span>Khaja Road, Bayzid, Chittagong, Bangladesh</span>
+ 					</li>
+ 					<li class="mb-3">
+ 						<i class="tf-ion-android-phone-portrait"></i>
+ 						<span>Phone: +880-31-000-000</span>
+ 					</li>
+ 					<li class="mb-3">
+ 						<i class="tf-ion-android-globe"></i>
+ 						<span>Fax: +880-31-000-000</span>
+ 					</li>
+ 					<li>
+ 						<i class="tf-ion-android-mail"></i>
+ 						<span>Email: hello@meghna.com</span>
+ 					</li>
+ 				</ul>
+ 				
+ 				<div class="social-icon">
+ 					<ul>
+ 						<li><a href="https://themefisher.com/"><i class="tf-ion-social-facebook"></i></a></li>
+ 						<li><a href="https://themefisher.com/"><i class="tf-ion-social-twitter"></i></a></li>
+ 						<li><a href="https://themefisher.com/"><i class="tf-ion-social-dribbble-outline"></i></a></li>
+ 						<li><a href="https://themefisher.com/"><i class="tf-ion-social-linkedin-outline"></i></a></li>
+ 					</ul>
+ 				</div>
+ 				
+ 			</div>
+ 			
+
+ 			
+ 			<div class="contact-form col-md-6 ">
+ 				<form id="contact-form" method="post" role="form">
+ 					<div class="form-group mb-4">
+ 						<input type="text" placeholder="Your Name" class="form-control" name="name" id="name" required>
+ 					</div>
+
+ 					<div class="form-group mb-4">
+ 						<input type="email" placeholder="Your Email" class="form-control" name="email" id="email" required>
+ 					</div>
+
+ 					<div class="form-group mb-4">
+ 						<input type="text" placeholder="Subject" class="form-control" name="subject" id="subject" required>
+ 					</div>
+
+ 					<div class="form-group mb-4">
+ 						<textarea rows="6" placeholder="Message" class="form-control" name="message" id="message" required></textarea>
+ 					</div>
+ 					<div id="cf-submit">
+ 						<input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+ 					</div>
+
+ 				</form>
+ 			</div>
+ 			
+
+ 		</div> 
+ 	</div> 
+ </section>  -->
+
+ <!--================================
+=            Google Map            =
+=================================-->
+<!-- <div class="google-map">
+	<div id="map_canvas" class="map_canvas" data-latitude="40.712776" data-longitude="-74.005974" data-marker="images/marker.png" data-marker-name="Bingo"></div>
+</div> -->
+
+{% include 'website/footer.html' %}
+
+{% endblock %}

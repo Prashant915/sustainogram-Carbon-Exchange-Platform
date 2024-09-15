@@ -1,0 +1,204 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Sustainogram</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Sustainogram - Carbon Exchange Platform">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Sustainogram">
+  <meta name="generator" content="Sustainogram - Carbon Exchange Platform">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'website/images/favicon.png' %}" />
+
+  <!-- CSS
+  ================================================== -->
+  <!-- Themefisher Icon font -->
+  <link rel="stylesheet" href="{% static 'website/plugins/themefisher-font/style.css' %}">
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="{% static 'website/plugins/bootstrap/bootstrap.min.css' %}">
+  <!-- Lightbox.min css -->
+  <link rel="stylesheet" href="{% static 'website/plugins/lightbox2/css/lightbox.min.css' %}">
+  <!-- animation css -->
+  <link rel="stylesheet" href="{% static 'website/plugins/animate/animate.css' %}">
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="{% static 'website/plugins/slick/slick.css' %}">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{% static 'website/css/privacy-achievment.css' %}">
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+  
+
+</head>
+<body id="body">
+  <header class="navigation fixed-top">
+    <div class="container">
+      <!-- main nav -->
+      <nav class="navbar navbar-expand-lg navbar-light px-0">
+        <!-- logo -->
+        <a class="navbar-brand logo" href="{% url 'homepage' %}">
+          <img loading="lazy" class="logo-default" src="{% static 'website/images/logoo.png' %}" alt="logo" />
+          <img loading="lazy" class="logo-white" src="{% static 'website/images/Group-26.png' %}" alt="logo" />
+        </a>
+        <!-- /logo -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+         <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item ">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="service.html">Solutions</a>
+            </li>
+            <!-- <li class="nav-item ">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li> -->
+            <li class="nav-item ">
+              <a class="nav-link" href="team.html">Resources</a>
+            </li>
+        <li class="nav-item ">
+              <a class="nav-link" href="calculator.html">calculator</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        <li class="nav-item ">
+              <a class="nav-link" href="login.html">Register</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown02" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Pages <i class="tf-ion-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown02">
+                <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+                <li><a class="dropdown-item" href="blog.html">Blog Page</a></li>
+                <li><a class="dropdown-item" href="single-post.html">Blog Single Page</a></li>
+                    
+                <li class="dropdown dropdown-submenu dropleft">
+                  <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0201" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu  <i class="tf-ion-chevron-down"></i></a>
+         -->
+                  <ul class="dropdown-menu" aria-labelledby="dropdown0201">
+                    <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
+                    <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- /main nav -->
+    </div>
+  </header>
+
+<section class="single-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 style="color:white">White Paper</h2>
+                <ol class="breadcrumb header-bradcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">White Paper</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+    <main>
+        <section id="intro" class="content-section">
+          <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+                <p>Climate change is a pressing challenge demanding innovative solutions. The current Voluntary Carbon Market (VCM) faces significant hurdles, including fragmentation, limited transparency, and high transaction costs, hindering its ability to effectively address this global issue.</p>
+                <p>At Sustainogram, we're committed to revolutionizing the carbon credit trading landscape. We've released a comprehensive white paper titled <strong>"Decentralized Sustainability: How Sustainogram Improves Carbon Credit Trading"</strong>. This paper dives deep into our pioneering decentralized platform, powered by blockchain technology, to create a more efficient and transparent VCM.</p>
+            </div>
+            <div class="col-md-6">
+              <img loading="lazy" src="{% static 'website/images/new/3.jpg' %}" style="border-radius:10px;" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+        </section>
+        <section id="abstract" class="content-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7180825264174604288" height="530" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                </div>
+                <div class="col-md-6">
+                  <h3>Abstract of White Paper</h3>
+                  <p>Climate change demands innovative solutions. The current Voluntary Carbon Market (VCM) struggles with fragmentation, lack of transparency, and high transaction costs, hindering its effectiveness. This white paper introduces Sustainogram, a pioneering decentralized platform that leverages blockchain technology to revolutionize carbon credit trading.</p>
+                  <ul>
+                      <li>A decentralized exchange facilitating efficient and transparent trading of carbon credits.</li>
+                      <li>A secure and verifiable meta registry for carbon offset validation.</li>
+                      <li>A comprehensive ecosystem connecting stakeholders and regulators.</li>
+                  </ul>
+                  <p>By utilizing blockchain, Sustainogram addresses key challenges of the VCM, including double counting, limited access, and high costs. This white paper explores the benefits for various stakeholders – businesses, project developers, buyers, consumers, and regulators.</p>
+                  <p>We compare Sustainogram with existing solutions and analyze the promising market opportunity for a decentralized carbon credit trading platform. The paper concludes by outlining the business model, development timeline, and team expertise behind Sustainogram, offering a compelling vision for a more sustainable future.</p>
+                </div>
+              </div>
+                
+            </div>
+        </section>
+        <section id="highlights" class="content-section">
+            <div class="container">
+                <h3>White Paper Highlights</h3>
+                <div class="card-grid">
+                    <div class="card" onclick="showModal('challenges')">
+                        <h4>The Challenges of the Existing VCM</h4>
+                        <p>The paper outlines the current limitations of the VCM, including issues like double counting, limited accessibility, and high transaction costs.</p>
+                    </div>
+                    <div class="card" onclick="showModal('solution')">
+                        <h4>Introducing Sustainogram's Three-Pronged Solution</h4>
+                        <p>We detail our innovative platform that offers:</p>
+                        <ul>
+                            <li>A decentralized exchange for efficient and transparent carbon credit trading.</li>
+                            <li>A secure and verifiable meta registry for carbon offset validation.</li>
+                            <li>A comprehensive ecosystem connecting stakeholders and regulators.</li>
+                        </ul>
+                    </div>
+                    <div class="card" onclick="showModal('benefits')">
+                        <h4>Benefits for All Stakeholders</h4>
+                        <p>The paper explores the advantages of Sustainogram for various players in the carbon market, including businesses, project developers, buyers, consumers, and regulatory bodies.</p>
+                    </div>
+                    <div class="card" onclick="showModal('advantage')">
+                        <h4>A Competitive Advantage</h4>
+                        <p>We compare Sustainogram to existing solutions, highlighting how our blockchain-based platform offers a distinct advantage.</p>
+                    </div>
+                    <div class="card" onclick="showModal('opportunity')">
+                        <h4>Market Opportunity</h4>
+                        <p>The paper analyzes the promising market potential for a decentralized carbon credit trading platform.</p>
+                    </div>
+                    <div class="card" onclick="showModal('future')">
+                        <h4>Building a Sustainable Future</h4>
+                        <p>We conclude by outlining our business model, development timeline, and the expertise of our team behind Sustainogram, showcasing our vision for a more sustainable future.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cta" class="content-section">
+            <div class="container">
+                <h3>Ready to Learn More?</h3>
+                <p>We invite you to delve deeper into the details of our revolutionary platform. Download the full white paper on our LinkedIn page:</p>
+                <a href="https://www.linkedin.com/posts/sustainogram_white-paper-decentralised-sustainability-activity-7180825265109950464-dV5i?utm_source=share&utm_medium=member_desktop" target="_blank" class="cta-button">Download White Paper</a>
+            </div>
+        </section>
+    </main>
+      
+          
+{% include 'website/footer.html' %}
+
+    
+    

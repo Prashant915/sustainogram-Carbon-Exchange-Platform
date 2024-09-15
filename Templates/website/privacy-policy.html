@@ -1,0 +1,206 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Sustainogram - Carbon Exchange</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Sustainogram - Carbon Exchange Platform">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Sustainogram">
+  <meta name="generator" content="Sustainogram - Carbon Exchange Platform">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'website/images/favicon.png' }" />
+  <!-- CSS
+  ================================================== -->
+  <!-- Themefisher Icon font -->
+  <link rel="stylesheet" href="{% static 'website/plugins/themefisher-font/style.css' %}">
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="{% static 'website/plugins/bootstrap/bootstrap.min.css' %}">
+  <!-- Lightbox.min css -->
+  <link rel="stylesheet" href="{% static 'website/plugins/lightbox2/css/lightbox.min.css' %}">
+  <!-- animation css -->
+  <link rel="stylesheet" href="{% static 'website/plugins/animate/animate.css' %}">
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="{% static 'website/plugins/slick/slick.css' %}">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'website/css/style2.css' %}">
+  <!-- fontawesome css -->
+  <link rel="stylesheet" href="{% static 'website/plugins/fontawesome/css/all.css' %}">
+  <!-- Icofont -->
+  <link rel="stylesheet" href="{% static 'website/plugins/icofont/icofont.css' %}">
+  <link rel="stylesheet" href="{% static 'website/css/privacy-achievment.css' %}">
+</head>
+<body id="body">
+
+  <!--
+  Start Preloader
+  ==================================== -->
+  <!-- <div id="preloader">
+    <div class='preloader'>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div> -->
+  <!--
+  End Preloader
+  ==================================== -->
+
+<!--
+Fixed Navigation
+==================================== -->
+<header class="navigation fixed-top">
+	<div class="container">
+	  <!-- main nav -->
+	  <nav class="navbar navbar-expand-lg navbar-light px-0">
+		<!-- logo -->
+		<a class="navbar-brand logo" href="{% url 'homepage' %}">
+		  <img loading="lazy" class="logo-default" src="{% static 'website/images/logoo.png' %}" alt="logo" />
+		  <img loading="lazy" class="logo-white" src="{% static 'website/images/Group-26.png' %}" alt="logo" />
+		</a>
+		<!-- /logo -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+		  aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+  
+		 <div class="collapse navbar-collapse" id="navigation">
+		  <ul class="navbar-nav ml-auto text-center">
+			<li class="nav-item ">
+			  <a class="nav-link" href="{% url 'about' %}">About Us</a>
+			</li>
+			<li class="nav-item ">
+			  <a class="nav-link" href="{% url 'service' %}">Solutions</a>
+			</li>
+			<!-- <li class="nav-item ">
+			  <a class="nav-link" href="portfolio.html">Portfolio</a>
+			</li> -->
+			<li class="nav-item ">
+			  <a class="nav-link" href="{% url 'resource' %}">Resources</a>
+			</li>
+			<li class="nav-item ">
+			  <a class="nav-link" href="{% url 'calculator' %}">calculator</a>
+			</li>
+			<li class="nav-item ">
+			  <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+			</li>
+			<li class="nav-item ">
+				<a class="nav-link" href="{% if request.user %} {% url 'homedashboard' %} {% else %} {% url 'register' %} {% endif %}">Register</a>
+			</li>
+			<!-- <li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown02" role="button" data-toggle="dropdown"
+				aria-haspopup="true" aria-expanded="false">
+				Pages <i class="tf-ion-chevron-down"></i>
+			  </a>
+			  <ul class="dropdown-menu" aria-labelledby="navbarDropdown02">
+				<li><a class="dropdown-item" href="404.html">404 Page</a></li>
+				<li><a class="dropdown-item" href="blog.html">Blog Page</a></li>
+				<li><a class="dropdown-item" href="single-post.html">Blog Single Page</a></li>
+									  
+				<li class="dropdown dropdown-submenu dropleft">
+				  <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0201" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu  <i class="tf-ion-chevron-down"></i></a>
+		 -->
+				  <ul class="dropdown-menu" aria-labelledby="dropdown0201">
+					<li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
+					<li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			</li>
+		  </ul>
+		</div>
+	  </nav>
+	  <!-- /main nav -->
+	</div>
+  </header>
+
+<section class="single-page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 style="color: white;">CARBON MARKET AND POLICY</h2>
+				<ol class="breadcrumb header-bradcrumb justify-content-center">
+					<li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">CARBON MARKET AND POLICY</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="container1">
+    
+    <div class="container mt-5">
+        <h2 class="font-weight-bold text-center">CARBON MARKET AND POLICY</h2>
+
+        <div class="row mt-5">
+            <div class="col-lg-7 col-md-12">
+                <p>The concept of carbon markets has evolved over time. Here's a deeper dive into some key milestones:</p>
+
+                <h3 class="font-weight-bold">1997: THE KYOTO PROTOCOL AND THE CLEAN DEVELOPMENT MECHANISM (CDM)</h3>
+                <p>We may collect the following types of information:</p>
+                <p>The Kyoto Protocol, adopted in 1997, was a landmark international treaty aimed at reducing greenhouse gas emissions. It established a binding emission reduction target for 37 industrialized countries (Annex I countries) for the period 2008-2012. A key feature of the Kyoto Protocol was the Clean Development Mechanism (CDM).
+                  The CDM allowed developed countries (Annex I) to invest in emission reduction projects in developing countries (non-Annex I). These projects could generate tradable emission reduction credits, called Certified Emission Reductions (CERs), which Annex I countries could use to meet their Kyoto Protocol targets. The CDM aimed to promote sustainable development in developing countries while providing Annex I countries with a flexible compliance option.
+                  </p>
+            </div>
+
+            <!-- Right Column (Images) -->
+            <div class="col-lg-5 col-md-12">
+                <div class="card mb-3">
+                    <img src="data:image/png;base64,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" class="card-img-top" alt="Privacy Policy Image 1">
+         
+                </div>
+            </div>
+     
+        </div>
+        </div>
+    </div>
+    
+  </div>
+  <div class="container2">
+    <div class="container mt-5">
+        <div class="row mt-5">
+            <div class="col-lg-5 col-md-12">
+                <div class="card">
+         <img src="{% static 'website/images/new/14.jpg' %}" alt="">
+                </div>
+        </div>
+            <div class="col-lg-7 col-md-12">
+                <h3 class="font-weight-bold">2005: THE KYOTO PROTOCOL COMES INTO EFFECT</h3>
+                <p>The Kyoto Protocol formally entered into force in 2005, marking a significant step towards international cooperation on climate change.</p>
+                <h3>2015: THE PARIS AGREEMENT AND THE SUSTAINABLE DEVELOPMENT MECHANISM (SDM)</h3>
+                <p>In 2015, the Paris Agreement was adopted, replacing the Kyoto Protocol. The Paris Agreement took a different approach, focusing on national commitments to reduce emissions rather than binding targets for specific countries. Under the Paris Agreement, all countries are required to submit Nationally Determined Contributions (NDCs) outlining their plans for reducing emissions.
+                  The Paris Agreement also introduced the concept of the Sustainable Development Mechanism (SDM). The SDM is envisioned as a future framework for international carbon trading under the Paris Agreement. However, the specific rules and regulations for the SDM are still under development.
+                  </p>
+            </div>
+    </div>
+    <h3 class="font-weight-bold">PRESENT DAY: THE VCM FLOURISHES ALONGSIDE COMPLIANCE CARBON MARKETS</h3>
+    <p>The VCM has emerged alongside compliance carbon markets established under the Kyoto Protocol and other national or regional regulations. The VCM allows companies and individuals to voluntarily participate in carbon offsetting, even if they are not subject to mandatory emission reduction targets.</p>
+
+    <h3 class="font-weight-bold">LIVE CARBON MARKET RATES</h3>
+    <p>We may share your information in the following situations:</p>
+    <!-- CarbonPrices Widget BEGIN -->
+<div id="carbon-prices">
+  <script type="text/javascript" src="https://carboncredits.com/live-carbon-prices/index.js.php" async=""></script>
+</div>
+<!-- CarbonPrices Widget END -->
+</div>
+
+
+{% include 'website/footer.html' %}
+

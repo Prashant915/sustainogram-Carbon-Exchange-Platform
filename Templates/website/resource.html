@@ -1,0 +1,51 @@
+{% extends 'website/header.html' %}
+{% load static %}
+
+{% block head %}
+
+<section class="single-page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Resources</h2>
+				<ol class="breadcrumb header-bradcrumb justify-content-center">
+					<li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Resources</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--
+Start About Section
+==================================== -->
+<section class="posts section">
+	<div class="container">
+		<div class="row">
+			<!-- /section title -->
+			<!-- single blog post -->
+			 {% for i in data %}
+			<article class="col-lg-4 col-md-6">
+				<div class="post-item">
+					<div class="media-wrapper">
+						<img loading="lazy" src="/media/{{i.Image}}" alt="amazing caves coverimage" class="img-fluid">
+					</div>
+
+					<div class="content">
+						<h3><a href="{% url 'summery' i.id %}">{{ i.Title }}</a></h3>
+						<p>{{ i.Description |slice:":100" |safe }}...</p>
+						<a class="btn btn-main" href="{% url 'summery' i.id %}">Read more</a>
+					</div>
+				</div>
+			</article>
+			<!-- /single blog post -->
+			{% endfor %}
+			<!-- single blog post -->
+		</div>
+	</div>
+</section>
+
+{% include 'website/footer.html' %}
+
+{% endblock %}

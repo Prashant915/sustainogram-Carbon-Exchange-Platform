@@ -1,0 +1,130 @@
+{% extends 'website/header.html' %}
+{% load static %}
+
+{% block head %}
+
+<section class="single-page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Contact Us</h2>
+				<ol class="breadcrumb header-bradcrumb justify-content-center">
+					<li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+ <!--Start Contact Us
+	=========================================== -->
+ <section class="contact-us" id="contact">
+ 	<div class="container">
+ 		<div class="row justify-content-center">
+			 <!-- section title -->
+ 			<div class="col-xl-6 col-lg-8">
+				<div class="title text-center">
+					<h2>Get In Touch</h2>
+					<p>Reach out effortlessly and stay engaged with our team for seamless support and personalized assistance</p>
+					<div class="border"></div>
+				</div>
+			</div>
+			<!-- /section title -->
+		</div>
+ 		<div class="row">
+ 			<!-- Contact Details -->
+ 			<div class="contact-details col-md-6 ">
+ 				<h3 class="mb-3">Contact Details</h3>
+ 				<p>Fill out the form below to get in touch with us. We'll respond to your inquiry as soon as possible.</p>
+ 				<ul class="contact-short-info mt-4">
+ 					<li class="mb-3">
+ 						<i class="tf-ion-ios-home"></i>
+ 						<span>Bhopal, Nagpur, Mumbai, Delhi.</span>
+ 					</li>
+ 					<!-- <li class="mb-3">
+ 						<i class="tf-ion-android-phone-portrait"></i>
+ 						<span>Phone: (+91) 97692 04997</span>
+ 					</li> -->
+ 					<!-- <li class="mb-3">
+ 						<i class="tf-ion-android-globe"></i>
+ 						<span>Fax: +880-31-000-000</span>
+ 					</li> -->
+ 					<li>
+ 						<i class="tf-ion-android-mail"></i>
+ 						<span>Email: contact@sustainogram.com</span>
+ 					</li>
+ 				</ul>
+ 				<!-- Footer Social Links -->
+ 				<div class="social-icon">
+ 					<ul>
+ 						<!-- <li><a href="https://themefisher.com/"><i class="tf-ion-social-facebook"></i></a></li>
+ 						<li><a href="https://themefisher.com/"><i class="tf-ion-social-twitter"></i></a></li>
+ 						<li><a href="https://themefisher.com/"><i class="tf-ion-social-dribbble-outline"></i></a></li> -->
+ 						<li><a href="https://www.linkedin.com/company/sustainogram/"><i class="tf-ion-social-linkedin-outline"></i></a></li>
+ 					</ul>
+ 				</div>
+ 				<!--/. End Footer Social Links -->
+ 			</div>
+ 			<!-- / End Contact Details -->
+
+ 			<!-- Contact Form -->
+ 			<div class="contact-form col-md-6 ">
+ 				<form id="contact-form" method="post" role="form">
+ 					<div class="form-group mb-4">
+ 						<input type="text" placeholder="Your Name" class="form-control" name="name" id="name" required>
+ 					</div>
+
+ 					<div class="form-group mb-4">
+ 						<input type="email" placeholder="Your Email" class="form-control" name="email" id="email" required>
+ 					</div>
+          <label for="" class="mb-4 ml-1 pr-5" style="color:grey;">Who are you contacting us as? </label>
+           <div class="form-check form-check-inline mb-4">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+            <label class="form-check-label" style="color:grey;" for="inlineCheckbox1">Company</label>
+          </div>
+          <div class="form-check form-check-inline mb-4">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2">
+            <label class="form-check-label" style="color:grey;" for="inlineCheckbox2">individual</label>
+          </div>
+
+ 					<div class="form-group mb-4">
+ 						<input type="text" placeholder="Company Address" class="form-control" name="CompanyAddress" id="CompanyAddress" required>
+ 					</div>
+           <div class=" form-group">
+            <label class="label" style="color:grey" for="subject">Your Query</label>
+            <select class="form-control" style="color:grey" id="dropdown">
+              <option class="dropdown-item" value="none">Select Query</option>
+              <option class="dropdown-item" value="General Inquiry">General Inquiry</option>
+              <option class="dropdown-item" value="Carbon Calculator Support">Carbon Calculator Support</option>
+              <option class="dropdown-item" value="Compliance Consulting Inquiry">Compliance Consulting Inquiry</option>
+              <option class="dropdown-item" value="Blockchain Carbon Exchange">Blockchain Carbon Exchange</option>
+              <option class="dropdown-item" value="Other">Other</option>
+            </select>
+          </div>
+ 					<div class="form-group mb-4">
+ 						<textarea rows="6" placeholder="Description of your company" class="form-control" name="description" id="description" required></textarea>
+ 					</div>
+ 					<div id="cf-submit">
+ 						<input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+ 					</div>
+
+ 				</form>
+ 			</div>
+ 			<!-- ./End Contact Form -->
+
+ 		</div> <!-- end row -->
+ 	</div> <!-- end container -->
+ </section> <!-- end section -->
+
+ <!--================================
+=            Google Map            =
+=================================-->
+<!-- <div class="google-map">
+	<div id="map_canvas" class="map_canvas" data-latitude="40.712776" data-longitude="-74.005974" data-marker="images/marker.png" data-marker-name="Bingo"></div>
+</div> -->
+ <!--====  End of Google Map  ====-->
+
+ {% include 'website/footer.html' %}
+
+ {% endblock %}

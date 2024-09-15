@@ -1,0 +1,158 @@
+{%load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Sustainogram</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Sustainogram - Carbon Exchange Platform">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Sustainogram">
+  <meta name="generator" content="Sustainogram - Carbon Exchange Platform">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'website/images/favicon.png' %}" />
+
+  <!-- CSS
+  ================================================== -->
+  <!-- Themefisher Icon font -->
+  <link rel="stylesheet" href="{% static 'website/plugins/themefisher-font/style.css' %}">
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="{% static 'website/plugins/bootstrap/bootstrap.min.css' %}">
+  <!-- Lightbox.min css -->
+  <link rel="stylesheet" href="{% static 'website/plugins/lightbox2/css/lightbox.min.css' %}">
+  <!-- animation css -->
+  <link rel="stylesheet" href="{% static 'website/plugins/animate/animate.css' %}">
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="{% static 'website/plugins/slick/slick.css' %}">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+  
+  <link rel="stylesheet" href="{% static 'website/css/privacy-achievment.css' %}">
+  
+
+</head>
+<body id="body">
+  <header class="navigation fixed-top">
+    <div class="container">
+      <!-- main nav -->
+      <nav class="navbar navbar-expand-lg navbar-light px-0">
+        <!-- logo -->
+        <a class="navbar-brand logo" href="{% url 'homepage' %}">
+          <img loading="lazy" class="logo-default" src="{% static 'website/images/logoo.png' %}" alt="logo" />
+          <img loading="lazy" class="logo-white" src="{% static 'website/images/Group-26.png' %}" alt="logo" />
+        </a>
+        <!-- /logo -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+         <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item ">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="service.html">Solutions</a>
+            </li>
+            <!-- <li class="nav-item ">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li> -->
+            <li class="nav-item ">
+              <a class="nav-link" href="team.html">Resources</a>
+            </li>
+        <li class="nav-item ">
+              <a class="nav-link" href="calculator.html">calculator</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        <li class="nav-item ">
+              <a class="nav-link" href="login.html">Register</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown02" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Pages <i class="tf-ion-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown02">
+                <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+                <li><a class="dropdown-item" href="blog.html">Blog Page</a></li>
+                <li><a class="dropdown-item" href="single-post.html">Blog Single Page</a></li>
+                    
+                <li class="dropdown dropdown-submenu dropleft">
+                  <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0201" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu  <i class="tf-ion-chevron-down"></i></a>
+         -->
+                  <ul class="dropdown-menu" aria-labelledby="dropdown0201">
+                    <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
+                    <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- /main nav -->
+    </div>
+  </header>
+  
+  <section class="single-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 style="color:white">Achievements</h2>
+                <ol class="breadcrumb header-bradcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Achievements</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+  </section>
+<main class="main-content">
+    <section class="milestone" data-aos="fade-up">
+        <h2>Grant Award from Startup India Seed Fund Scheme (SISF)</h2>
+        <img src="{% static 'website/images/gov.png' %}" alt="Government of India" class="milestone-logo">
+        <p>We are proud to announce that Sustainogram has been selected as a recipient of a grant under the prestigious Startup India Seed Fund Scheme (SISF). This recognition by the Government of India validates our innovative approach to carbon credit trading and strengthens our commitment to making a positive impact.</p>
+    </section>
+    <section class="milestone" data-aos="fade-up" data-aos-delay="100">
+        <h2>Government Recognition</h2>
+        <div class="milestone-logos">
+            <img src="{% static 'website/images/bnest.jpg' %}" alt="Bnest Incubation Center" class="milestone-logo">
+            <img src="{% static 'website/images/bhopal.png' %}" alt="Bhopal Smart City" class="milestone-logo">
+        </div>
+        <p>We are honored to be recognized by esteemed government institutions like the Bnest Incubation Center and Bhopal Smart City. Their support provides valuable resources and guidance, propelling us forward in our mission.</p>
+    </section>
+    <section class="milestone" data-aos="fade-up" data-aos-delay="200">
+        <h2>Funding of Rs 20 Lakhs (USD ~$26,000)</h2>
+        <p>The grant funding of Rs 20 Lakhs (approximately USD $26,000) will be instrumental in accelerating our development and propelling us towards achieving our sustainability goals.</p>
+    </section>
+    <section class="milestone" data-aos="fade-up" data-aos-delay="300">
+        <h2>Valuation of Rs 18.87 Cr (USD ~$2.4 Million)</h2>
+        <p>We are humbled by the valuation of Rs 18.87 Crore (approximately USD $2.4 Million) placed on Sustainogram. This signifies the immense potential investors see in our vision and motivates us to deliver exceptional results.</p>
+    </section>
+    <section class="thank-you" data-aos="fade-up" data-aos-delay="400">
+        <h2>A Heartfelt Thank You</h2>
+        <p>We extend our sincere gratitude to the Government of India, Bnest Incubation Center, Bhopal Smart City, and all our supporters for believing in Sustainogram. Your confidence fuels our passion and empowers us to create a more sustainable future for all.</p>
+        <p>This is just the beginning! We are steadfast in our commitment to revolutionize the carbon credit market with our blockchain-based platform. Stay tuned for exciting updates as we continue to break new ground in sustainability.</p>
+        <p class="closing">Together, let's build a greener tomorrow!</p>
+    </section>
+</main>
+
+
+{% include 'website/footer.html' %}
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- end Footer Area
+  ========================================== -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
